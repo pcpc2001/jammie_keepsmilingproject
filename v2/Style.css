@@ -1,0 +1,76 @@
+﻿@media screen and (max-width: 55em) {
+    #header_wrapper {
+        width:800px;
+    }
+}
+
+
+@media screen and (max-width: 32.25em) {
+
+}
+
+@media screen and (max-width: 24em) {
+}
+
+#header_wrapper {
+    position:relative;
+    width:1200px;
+    height:250px;
+}
+
+#header {
+    display:inline-block;
+    position:absolute;
+    background-color:black;
+    color:white;
+    text-align:left;
+    padding:5px;
+    height:200px;
+    width:200px;
+    bottom:0px;    
+}
+#header_text {
+    position:inherit;
+    float:left;
+    text-align:right;
+    vertical-align:text-bottom;
+    margin:20px;
+    bottom:0px;
+    font-family: 'Istok Web', sans-serif;
+}
+
+#nav_wrapper {
+    position:absolute;
+    display:inline-block;
+    right:0px;
+    bottom:20px;
+    width:600px;
+}
+#nav {
+    position:absolute;
+    bottom: 0px;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:30px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+.nav_item {
+	float: left; 
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Istok Web', sans-serif;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
