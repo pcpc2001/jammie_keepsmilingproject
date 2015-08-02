@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Jammie Chang | Freelance Arts Manager</title>
+
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="~/Styles/Master2Style.css"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Montserrat:400,700|Lato:400,100,300,700,900,300italic,100italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+		<div class="cbp-af-header">
+			<div class="cbp-af-inner">
+				<div id="header">
+                    <h1 id="header_text">Jammie Chang</h1>
+                </div>
+				<nav>
+					<a href="#" class="active">Home</a>
+					<a href="#">About</a>
+					<a href="#">Works</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+		</div> <!-- end cbp-af-header -->
+
+		<div class="content">
+			<div class="container">
+                <div>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="~/Images/img.jpg" alt=""/>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate ut nisi vel tempus. Proin sit amet libero condimentum, porta lorem vel, tincidunt nunc. Donec quam mi, varius vehicula augue eu, rutrum dapibus augue. Quisque eleifend nulla turpis, eget dapibus urna imperdiet nec. Integer eget tristique turpis. Sed nunc elit, aliquam quis gravida a, posuere ac mi. Pellentesque et eros hendrerit nulla venenatis commodo. Etiam fringilla quam leo, nec tempus mauris blandit sed. Praesent ac nisi sed mauris dapibus ultrices. Donec in neque elementum tortor dapibus placerat. Donec dictum leo ac leo accumsan, a pretium tortor accumsan. Nunc non ante id enim sollicitudin condimentum vitae lacinia lectus. Curabitur dapibus, turpis quis semper gravida, ligula nisi dapibus justo, ut porttitor erat nunc venenatis orci. Maecenas at lobortis metus, eu elementum sem. Aliquam erat volutpat.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end .content -->
+	</div><!-- end .container -->
+
+	<script src="js/classie.js"></script>
+	<script src="js/script.js"></script>
+    </form>
+</body>
+</html>
