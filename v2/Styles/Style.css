@@ -8,7 +8,7 @@
 
 #header_wrapper {
     position:relative;
-    width:1000px;
+    width:100%;
     height:250px;
     top: 0px;
     left: 0px;
@@ -93,6 +93,15 @@
     clear:both;
     text-align:center;
     padding:5px;
+}
+
+#media_slide {
+    width: 100%;
+    height: 100%;
+}
+
+.Slider {
+    background-color:blue;
 }
 
 @media screen and (max-width: 62em) {
