@@ -8,6 +8,7 @@ using System.Web;
 /// </summary>
 public abstract class BaseMediaSlide : System.Web.UI.UserControl
 {
+    public String SlideId { get; set; }
     protected String ContentClassAttribute = String.Empty;
     public abstract String getMediaContentHtml(String id);
     public void setContentClassAttribute(String attribute)

@@ -1,15 +1,115 @@
-﻿
+﻿@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
 .MediaSlider {
     position:relative;
-    width:60%;
+    width:70%;
     height:inherit;
     margin-left:auto;
     margin-right:auto;
-    background-color:aqua;
+    /*background-color:aqua;*/
+    overflow-x:hidden;
+    white-space:nowrap;
+}
+
+.MediaSliderFrame {
+    position:relative;
+    width:auto;
+    height:100%;
+    left:10%;
+    transition:all 1s;
+}
+
+.MediaSliderFrame:hover {
+    cursor: pointer;
 }
 
 .ContentSlide {
     position:relative;
-    width:100%;
+    width:80%;
     height:auto;
+    display:inline-block;
+    left:10%;
+    transition:all 1s;
 }
+
+#MediaSliderNavLeft {
+    position:absolute;
+    width:10%;
+    height:100%;
+    left:0px;
+    float:left;
+    display:normal;
+    top:0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#MediaSliderNavRight {
+    position:absolute;
+    width:10%;
+    height:100%;
+    right:0px;
+    float:right;
+    display:normal;
+    top:0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.MediaSliderNavFrame {
+    display:table;
+    width:100%;
+    height:100%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.MediaSliderNavFrame:hover > .MediaSliderNavText {
+    text-shadow: 0px 0px 30px rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .8);
+}
+
+.MediaSliderNavText {
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, .3);
+    font-family: "Varela Round", sans-serif;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    font-size: 4em;
+    transition: all 0.3s;
+}
+
+#MediaSliderNavLeft {
+    background: linear-gradient(to right, 
+        rgba(255,255,255, 1), 
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.5),
+        rgba(255,255,200,0));
+    transition: all 0.3s;
+}
+
+#MediaSliderNavLeft:hover {
+     background: linear-gradient(to right, 
+        rgba(255,255,255, 1), 
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.6),
+        rgba(255,255,200,0));
+}
+
+#MediaSliderNavRight {
+    background: linear-gradient(to right, 
+        rgba(255,255,255, 0), 
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,1));
+    transition: all 0.3s;
+}
+
+    #MediaSliderNavRight:hover {
+        background: linear-gradient(to right, 
+            rgba(255,255,255, 0), 
+            rgba(255,255,255,0.6), 
+            rgba(255,255,255,0.9), 
+            rgba(255,255,255,1));
+    }

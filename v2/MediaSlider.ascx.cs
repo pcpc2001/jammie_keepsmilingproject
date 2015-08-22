@@ -63,15 +63,32 @@ public partial class MediaSlider : System.Web.UI.UserControl
     {
         StringBuilder sb = new StringBuilder();
         String prefix = elementIdPrefix;
+        String classAttr = this.getAttributeContentClass();
         if (prefix == null || prefix.Length <= 0)
         {
             prefix = "sliderElement";
         }
+        //Add 1 Empty Filler
+        //sb.AppendLine(String.Format("<div id=\"{0}\" class=\"{1}\" ></div>",
+        //    "head_slide",
+        //    classAttr));
         for (int i = 0; i < this.MediaSlideElements.Count; i++)
         {
             String id = String.Format("{0}{1}", prefix, i.ToString());
+            this.MediaSlideElements[i].SlideId = id;
             sb.AppendLine(this.MediaSlideElements[i].getMediaContentHtml(id));
         }
+        //Add 1 Empty Filler at the end.
+        //sb.AppendLine(String.Format("<div id=\"{0}\" class=\"{1}\" ></div>",
+        //    "tail_slide",
+        //    classAttr));
         return sb.ToString();
+    }
+
+    protected String getFirstSlideId()
+    {
+        if (this.MediaSlideElements.Count <= 0)
+            return String.Empty;
+        return this.MediaSlideElements[0].SlideId;
     }
 }
